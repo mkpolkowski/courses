@@ -1,3 +1,8 @@
+/******************************************************************************************
+ * Title: Solution to "mario" (less comfortable) in Problem Set 1 – CS50 2017
+ * Author: Mateusz Polkowski
+ ******************************************************************************************/
+
 #include <cs50.h>
 #include <stdio.h>
 
@@ -8,9 +13,9 @@ int main(void) {
     // ask for a number until user gives value between 0 and 23
     do {
         if (retry > 0) {
-            printf("Height: (%i)", retry);
+            printf("Height: ");
         } else {
-            printf("Retry: (%i)", retry);
+            printf("Retry: ");
             retry = 3;
         }
         height = GetInt();
