@@ -10,7 +10,7 @@
 
 int main(void) {
     // prompt the user for a name
-    string name = GetString();
+    string name = get_string();
     
     // return the first inicial in upper case
     printf("%c", toupper(name[0]));
