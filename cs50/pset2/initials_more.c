@@ -15,13 +15,15 @@ int main(void) {
     // check every sigle letter in the string
     for (int i = 0, n = strlen(name); i < n; i++) {
         // skip all spaces
-        while (name[i] == ' ') {
+        while (name[i] == ' ' && i < n) {
             i++;
         }
         
-        // print letter after space in upper case
-        printf("%c", toupper(name[i]));
-        
+        // print letter after space in upper case unless it's the last space
+        if (i < n) {
+            printf("%c", toupper(name[i]));
+        }
+
         // search for the next space
         while (name[i] != ' ' && i < n) {
             i++;
